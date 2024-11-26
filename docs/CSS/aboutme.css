@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-VariableFont_wght.ttf)
+    format(truetype);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../FONTS/Raleway/Raleway-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: auto;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: lightslategray;
+}
+body {
+  margin: 0;
+  width: auto;
+  height: auto;
+  scroll-behavior: smooth;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+main {
+  position: relative;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+.button {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 200;
+  margin: 0;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+.bef svg {
+  display: inline;
+  fill: black;
+  width: 20px;
+}
+button .aft {
+  display: none;
+  color: white;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+button:hover .bef {
+  display: none;
+}
+button:hover .aft {
+  display: inline;
+}
+section {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  position: relative;
+}
+.intro {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+.lside {
+  flex: 1;
+  position: relative;
+  padding: 50px;
+  box-shadow: -30px 0px 60px 100px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lside p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: justify;
+  border-left: 3px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.intro > div img {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.firstpt h1,
+.secondpt h1,
+.thirdpt h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.secondpt .intro {
+  flex-direction: row-reverse;
+}
+.secondpt .lside {
+  box-shadow: 30px 0px 60px 100px black;
+}
+.thirdpt .intro {
+  flex-direction: row;
+}
+#alt p{
+  border-right: 3px solid white;
+  border-left: 0 black;
+}
